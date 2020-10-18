@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #myDIV {
+            width: 300px;
+            height: 200px;
+            background: red url('1.jpg') no-repeat top left/5px 5px;
+            animation: mymove 8s infinite;
+        }
+        
+        @keyframes mymove {
+            100% {
+                background: blue bottom right/70px 70px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Animation of background</h1>
+
+    <p>Gradually change the background property:
+        <p>
+            <div id="myDIV"></div>
+
+            <p>The background property is a shorthand property for all background properties.</p>
+            <p>The background-color, background-position, and background-size properties are <em>animatable</em> in CSS.</p>
+            <p><b>Note:</b> CSS Animations do not work in Internet Explorer 9 and earlier versions.</p>
+
+</body>
+
+</html>
